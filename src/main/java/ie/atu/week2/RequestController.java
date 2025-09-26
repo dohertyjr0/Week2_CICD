@@ -17,5 +17,7 @@ public class RequestController {
         return "Name:  "+name+", Age "+age+"!";
     }
 
-
+    public Person getPerson(){
+        return new Person("John",23);
+    }
 }
