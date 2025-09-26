@@ -12,4 +12,8 @@ public class RequestController {
     public String greetByName(@PathVariable String name){
         return "Hello "+name + "!";
     }
+
+    public String details(@RequestParam String name, @RequestParam int age){
+        return "Name:  "+name+", Age "+age+"!";
+    }
 }
