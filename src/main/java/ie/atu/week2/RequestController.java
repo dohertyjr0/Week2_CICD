@@ -8,4 +8,8 @@ public class RequestController {
     public String hello(){
         return "Hello";
     }
+
+    public String greetByName(@PathVariable String name){
+        return "Hello "+name + "!";
+    }
 }
