@@ -1,17 +1,32 @@
 package ie.atu.week2;
 
-public class Calculate {
-    private int add;
-    private int sub;
-    private int mul;
-    private int div;
+import org.springframework.http.converter.json.GsonBuilderUtils;
 
-    public Calculate(int add, int sub, int mul, int div){
-        this.add = add;
-        this.sub = sub;
-        this.mul = mul;
-        this.div = div;
+import java.sql.SQLOutput;
+
+public class Calculate {
+
+    public int add(int a, int b){
+        return a+b;
     }
+    public int sub(int a, int b){
+        return a-b;
+    }
+
+    public int mul(int a, int b){
+        return a*b;
+    }
+
+    public int div(int a, int b){
+        if(b == 0 ){
+            return 0;
+        }
+        else{
+            return a/b;
+        }
+    }
+
+
 
 
 }
